@@ -16,6 +16,7 @@ PressbooksURL: https://rmit.pressbooks.pub/learninglab/wp-json/pressbooks/v2/par
 
 <!-- partial -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js'></script>
+{% include "pressbooks.njk" %}
 <script>
 // Post.
 var postsDiv = $( '.posts' );
@@ -39,8 +40,5 @@ $.getJSON( 'https://rmit.pressbooks.pub/learninglab/wp-json/pressbooks/v2/parts'
 		postsDiv.append( '<h3>'+title+'</h3><div>' + excerpt  );
 	});
 });
-
-
-
 </script>
 
